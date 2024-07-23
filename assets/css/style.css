@@ -1,0 +1,30 @@
+.navbar.bg-body-custom {
+    background-color: #17A3A4;
+    border-bottom-left-radius: 50px;
+}
+.navbar.bg-body-custom a {
+    color: #fff;
+}
+.btn-success {
+    background-color: #40CC9B;
+    --bs-btn-hover-bg: #30a079;
+    --bs-btn-hover-border-color: #36b98b;
+    --bs-btn-active-bg: #30a079;
+    --bs-btn-active-border-color: #30a079;
+    --bs-btn-border-color: #30a079;
+}
+.divider-title {
+    background-image: url(../images/divider.png);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    background-size: auto;
+    height: 60px;
+}
+.divider-title-center {
+    background-image: url(../images/divider.png);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    background-size: auto;
+    height: 60px;
+    background-position-x: 50%;
+}
