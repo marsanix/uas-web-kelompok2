@@ -133,3 +133,74 @@ ul.menu-widget-footer li a {
     color: #BBE3F8;
     margin-bottom: 2rem;
 }
+.main-menu li.nav-item {
+    margin-left: 1.5rem;
+}
+.main-menu .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+.main-menu .dropdown .dropdown-menu {
+    background-color: #2d2d2d;
+}
+.main-menu .dropdown .dropdown-divider {
+    border-top: 1px solid #4d4d4d;
+}
+.main-menu .dropdown .dropdown-menu a {
+    color: #fff;
+}
+.main-menu .dropdown:hover .dropdown-menu a:hover {
+    background-color: #2d2d2d;
+    color: #40CC9B;
+}
+#mainMenu.scrolledDown {
+    border-bottom: 5px solid #17A3A4;
+}
+#footerCopyright {
+    color: #fff;
+    padding-top: 1.5rem;
+}
+#footerCopyright .list-group {
+    justify-content: center;
+}
+#footerCopyright .list-group .list-group-item {
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 0px 10px 0px 10px;
+}
+
+
+#pesanKepalaSekolah {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #6a61f3, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 50s ease infinite;
+    -z-animation: rainbow 50s ease infinite;
+    -o-animation: rainbow 50s ease infinite;
+      animation: rainbow 50s ease infinite;
+}
+
+
+/* raindbow bg animation untuk section pesanKepalaSekolah */
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
