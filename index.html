@@ -540,13 +540,13 @@
               <h5 class="mb-3 divider-title-footer">APLIKASI</h5>
               <ul class="menu-widget-footer">
                 <li>
-                  <a href="">Data Siswa</a>
+                  <a href="data-siswa.html">Data Siswa</a>
                 </li>
                 <li>
-                  <a href="">E-Raport</a>
+                  <a href="https://raportku.com/">E-Raport</a>
                 </li>
                 <li>
-                  <a href="">PPDB</a>
+                  <a href="https://ppdb.alkahfi.or.id/">PPDB</a>
                 </li>
               </ul>
 
@@ -562,6 +562,11 @@
             </div>
           </div>
         </div>
+
+        <div id="btnScrollToTop" style="position: fixed; width: 2.5rem; height: 2.5rem; bottom: 5.5rem; right: 2rem;">
+          <a href="javascript: void(0)"><img src="assets/images/back-to-top-button.png" alt="" /></a>
+        </div>
+
       </section>
 
       <section id="footerCopyright">
@@ -603,8 +608,6 @@
         // Javascript intuk memberikan efek animasi pada galeri photo
         const galleryItemElements = document.querySelectorAll('.gallery-item');
         galleryItemElements.forEach(image => {
-            console.log(image.textContent);
-
             image.addEventListener('mouseover', () => {
                 image.style.transform = "scale(1.1)";
                 image.style.transition = "0.2s ease-in-out";
@@ -617,17 +620,33 @@
 
         });
 
+        // Javascript untuk menjadikan main menu fixed to top ketika scroll dan menambahkan background
         const mainMenu = document.getElementById('mainMenu');
+        const btnScrollToTop = document.getElementById('btnScrollToTop');
+        
+        btnScrollToTop.style.display = 'none';
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-            console.log('Scroll Position:', scrollPosition);
             if(scrollPosition > 50) {
               mainMenu.classList.add("fixed-top");
               mainMenu.classList.add("scrolledDown");
+              btnScrollToTop.style.display = 'block';
             } else {
               mainMenu.classList.remove("fixed-top");
               mainMenu.classList.remove("scrolledDown");
+              btnScrollToTop.style.display = 'none';
             }
+        });
+
+
+        const scrollButton = document.getElementById('btnScrollToTop');
+        scrollButton.addEventListener('click', () => {
+           
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+           
         });
 
     </script>
