@@ -35,6 +35,13 @@
     background-size: auto;
     height: 60px;
 }
+.divider-title-sidebar {
+    background-image: url(../images/divider-footer.png);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    background-size: auto;
+    height: 60px;
+}
 .carousel-item {
     transition: transform 0.8s ease, opacity .1s ease-out;
 }
@@ -133,6 +140,21 @@ ul.menu-widget-footer li a {
     color: #BBE3F8;
     margin-bottom: 2rem;
 }
+ul.menu-widget-sidebar {
+    list-style-type: none;
+    padding-left: 0rem;
+    padding-right: 1rem;
+}
+ul.menu-widget-sidebar li {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #40CC9B;
+}
+ul.menu-widget-sidebar li a {
+    text-decoration: none;
+    color: #212529;
+    margin-bottom: 2rem;
+}
 .main-menu li.nav-item {
     margin-left: 1.5rem;
 }
@@ -169,7 +191,54 @@ ul.menu-widget-footer li a {
     color: #fff;
     padding: 0px 10px 0px 10px;
 }
-
+#headerSinglePage {
+    height: 250px;
+    background-image: url(../images/header-single-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+#headerSinglePage h3 { 
+    margin-top: 10rem;
+}
+#headerSinglePage ul { 
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+#headerSinglePage ul li { 
+    margin-right: 0.5rem;
+}
+#headerSinglePage ul li a { 
+    text-decoration: none;
+    color: #fff;
+}
+#headerSinglePage ul li:after { 
+    content: "»";
+    margin-left: 0.5rem;
+}
+#headerSinglePage ul li:last-child:after { 
+    content: "";
+}
+#main main article {
+    padding-right: 3rem;
+}
+.misi-sekolah {
+    list-style-image: url(../images/list-custom-icon.png);
+}
+.misi-sekolah li {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+#aplikasiDataSiswa main {
+    width: 28rem;
+}
+#aplikasiDataSiswa main .form-login-area {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+}
 
 #pesanKepalaSekolah {
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #6a61f3, #dd00f3, #dd00f3);

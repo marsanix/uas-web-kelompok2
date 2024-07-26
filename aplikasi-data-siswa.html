@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Meta Viewport mengatur area halaman web untuk menginstruksikan ke browser cara merender halaman pada ukuran layar yang berbeda (yaitu, desktop/tablet/seluler). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--
+    ************************************************** 
+    *********** TUGAS UJIAN AKHIR SEMESTER *********** 
+    ************************************************** 
+
+    Mata Kuliah       : Pemrograman Web 1
+    Kelas             : IT205
+    Dosen Pengajar    : Riad Sahara, S.SI, MT
+    Periodik          : 2023/2024 Genap
+    Nama Kelompok     : Kelompok 2
+    Anggota Kelompok  :
+
+    1. Nama : MARSANI
+       NIM  : 230401010282
+
+    2. Nama : MUHAMAD FACHRI
+       NIM  : 230401010351
+
+    3. Nama : ABDUL PATAH
+       NIM  : 230401010308
+
+    ****************** TERIMA KASIH! ****************** 
+    -->
+
+    <!-- Title akan ditampilkan di Google dan sebagian besar mesin pencari lainnya. Sangat penting untuk optimasi SEO karena relevan dengan keyword pencarian -->
+    <title>UAS: Pemrograman Web 1 | Kelompok 2</title>
+
+    <!-- Meta Robots Memberi tahu mesin pencari apakah dan bagaimana mereka harus merayapi halaman web -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta Description termasuk salah satu trik untuk SEO menggunakan meta description -->
+    <meta name="description" content="Website dengan tema Edukasi untuk Sekolah Dasar menggunakan Bootstrap sebagai tugas dari UAS mata kuliah Pemrograman Web 1 dari Kelompok 2">
+
+    <!-- Mengambil CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Mengambil CSS Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Mengambil CSS yang di buat sendiri -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+    
+      <!-- ########### TOP MENU ########### -->
+      <nav class="navbar navbar-expand-lg bg-body-custom">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> (0778) 4042020</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="bi bi-envelope-fill"></i> info@sdbinainsani.com</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-youtube"></i></a>
+                      </li>
+                    </ul>
+                  <button class="btn btn-success" type="submit" style="margin-left: 1rem;">Daftar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- ########### MAIN MENU ########### -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenu">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <span class="h4">SD BINA INSANI INTERNASIONAL</span>
+              <div class="fs-6 text lead">Menyiapkan Generasi Rabbani, Mandiri, Kreatif, Inovatif</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+              </ul>
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tentang Kami
+                  </a>
+                  <ul class="dropdown-menu" style="min-width: 15rem;">
+                    <li><a class="dropdown-item" href="tentang-sekolah.html">Tentang Sekolah</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#keunggulanSekolah">Keunggulan Sekolah</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#fasilitasSekolah">Fasilitas Sekolah</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#tenagaPengajar">Tenaga Pengajar</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#testimoni">Testimoni</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html#gallery">Galeri Photo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Aplikasi
+                  </a>
+                  <ul class="dropdown-menu" style="min-width: 15rem;">
+                    <li><a class="dropdown-item" href="aplikasi-data-siswa.html">Data Siswa</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://raportku.com/" rel="noopener" target="_blank">E-Raport</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://ppdb.alkahfi.or.id/" rel="noopener" target="_blank">PPDB</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#berita">Berita</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">Kontak Kami</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </header>
+
+      <!-- ########### PESAN KEPALA SEKOLAH ########### -->
+      <section id="headerSinglePage">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col mt-auto">
+
+              <h3>TENTANG SEKOLAH</h3>
+              <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Sekolah</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="aplikasiDataSiswa">
+        <div class="container py-5">
+
+          <div class="row">
+            <div class="col" style="text-align: -webkit-center;">
+
+              <main>
+
+                <h5>Masuk Untuk Mengelola Data Siswa</h5>
+
+                <div class="form-login-area mt-4">
+                  <form id="frmLogin">
+                    <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" aria-describedby="loginEmailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="text" class="form-control" id="loginPassword" aria-describedby="loginPasswordHelp">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-success">Masuk</button>
+                  </form>
+                </div>
+
+              </main>
+
+            </div>
+            <div class="col-3">
+
+              <aside>
+                
+                <h5 class="divider-title-sidebar">CARI</h5>
+                <form id="frmSearch">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="inputSearch" placeholder="Cari...">
+                  </div>
+                </form>
+
+                <h5 class="divider-title-sidebar mt-5">APLIKASI</h5>
+                <ul class="menu-widget-sidebar">
+                  <li><a href="aplikasi-data-siswa.html">Data Siswa</a></li>
+                  <li><a href="https://raportku.com/">E-Rapor</a></li>
+                  <li><a href="https://ppdb.alkahfi.or.id">PPDB</a></li>                
+                </ul>
+
+                <h5 class="divider-title-sidebar mt-5">BERITA TERBARU</h5>
+                <ul class="menu-widget-sidebar">
+                  <li><a href="#">Studi Banding Ke Sekolah Singapore</a></li>
+                  <li><a href="#">Petik Hikmah di Balik Perpisahan Siswa</a></li>
+                  <li><a href="#">Penerimaan Siswa Baru Angkatan 2024</a></li>
+                </ul>
+                
+
+              </aside>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ########### FOOTER ########### -->
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center py-5">
+
+              <img src="assets/images/logo-sekolah.png" style="width: 70%;" alt="" />
+
+            </div>
+            <div class="col py-5">
+
+              <h5 class="mb-3 divider-title-footer">TENTANG</h5>
+              <p>SD BINA INSANI INTERNASIONAL: Menyiapkan Generasi Rabbani, Mandiri, Kreatif, Inovatif. Kami berkomitmen untuk mengembangkan potensi siswa melalui pendidikan holistik dan lingkungan belajar yang mendukung.</p>
+        
+            </div>
+            <div class="col py-5">
+
+              <h5 class="mb-3 divider-title-footer">APLIKASI</h5>
+              <ul class="menu-widget-footer">
+                <li>
+                  <a href="aplikasi-data-siswa.html">Data Siswa</a>
+                </li>
+                <li>
+                  <a href="https://raportku.com/">E-Raport</a>
+                </li>
+                <li>
+                  <a href="https://ppdb.alkahfi.or.id/">PPDB</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col py-5">
+
+              <h5 class="mb-3 divider-title-footer">ALAMAT</h5>
+              <p>Jl. Bengkong Kolam, Sadai, Bengkong, Blok D 7-19, Sadai, Kec. Bengkong, Kota Batam, Kepulauan Riau 29444<br /><br />
+
+                Telp. (0778) 4082222<br />
+                HP. +62887 6119 330</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol untuk scroll ke atas -->
+        <div id="btnScrollToTop" style="position: fixed; width: 2.5rem; height: 2.5rem; bottom: 5.5rem; right: 2rem;">
+          <a href="javascript: void(0)"><img src="assets/images/back-to-top-button.png" alt="" /></a>
+        </div>
+
+      </section>
+
+      <!-- ########### FOOTER COPYRIGHT ########### -->
+      <footer id="footerCopyright">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+
+              <ul class="list-group list-group-horizontal mb-2 mb-lg-0">
+                <li class="list-group-item">
+                  <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#"><i class="bi bi-youtube"></i></a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col text-center">
+              <span class="text">&copy; All right reserved 2024</span>
+            </div>
+            <div class="col text-center">
+              <span class="text">Developed by KelompokDua</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <script>
+
+        // Javascript intuk memberikan efek animasi pada galeri photo
+        const galleryItemElements = document.querySelectorAll('.gallery-item');
+        galleryItemElements.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = "scale(1.1)";
+                image.style.transition = "0.2s ease-in-out";
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.transform = "scale(1)";
+                image.style.transition = "0.2s ease-in-out";
+            });
+
+        });
+
+        // Javascript untuk menjadikan main menu fixed to top ketika scroll dan menambahkan background
+        const mainMenu = document.getElementById('mainMenu');
+        const btnScrollToTop = document.getElementById('btnScrollToTop');
+        
+        btnScrollToTop.style.display = 'none';
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if(scrollPosition > 50) {
+              mainMenu.classList.add("fixed-top");
+              mainMenu.classList.add("scrolledDown");
+              btnScrollToTop.style.display = 'block';
+            } else {
+              mainMenu.classList.remove("fixed-top");
+              mainMenu.classList.remove("scrolledDown");
+              btnScrollToTop.style.display = 'none';
+            }
+        });
+
+
+        // Javascript untuk scroll up ketika click button yang ada di pojok kanan bawah
+        const scrollButton = document.getElementById('btnScrollToTop');
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+           
+        });
+
+    </script>
+
+  </body>
+</html>
