@@ -5,6 +5,8 @@
 
     <!-- Meta Viewport mengatur area halaman web untuk menginstruksikan ke browser cara merender halaman pada ukuran layar yang berbeda (yaitu, desktop/tablet/seluler). -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
     
     <!--
     ************************************************** 
@@ -79,7 +81,7 @@
                         <a class="nav-link" href="#"><i class="bi bi-youtube"></i></a>
                       </li>
                     </ul>
-                  <a href="aplikasi-data-siswa.html" class="btn btn-success" style="margin-left: 1rem;">Daftar</a>
+                  <a href="aplikasi-data-siswa-login.html" class="btn btn-success" style="margin-left: 1rem;">Daftar</a>
               </form>
             </div>
           </div>
@@ -125,7 +127,7 @@
                     Aplikasi
                   </a>
                   <ul class="dropdown-menu" style="min-width: 15rem;">
-                    <li><a class="dropdown-item" href="aplikasi-data-siswa.html">Data Siswa</a></li>
+                    <li><a class="dropdown-item" href="aplikasi-data-siswa-login.html">Data Siswa</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="https://raportku.com/" rel="noopener" target="_blank">E-Raport</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -525,6 +527,28 @@
         </div>
       </section>
 
+
+      <section>
+        <div class="container-fluid bg-dark">
+
+          <div class="row">
+            <div class="col" style="height: 400px; object-fit: cover; text-align: center; margin: 0px; padding: 0px;">
+
+              <video width="100%" width="auto" autoplay loop muted style="object-fit: cover; text-align: -webkit-center; max-height: 400px;">
+                <source src="assets/videos/vecteezy_bandung-west-java-indonesia.mp4" type="video/mp4" />
+              </video>
+
+              <audio id="audioHomePage" controls autoplay loop>
+                <source src="assets/audios/forest-with-small-river-birds-and-nature.mp3" type="audio/mpeg" />
+              </audio>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
       <!-- ########### KONTAK ########### -->
       <section id="contact" class="mb-5 pt-5">
         <div class="container py-5">
@@ -595,7 +619,7 @@
               <h5 class="mb-3 divider-title-footer">APLIKASI</h5>
               <ul class="menu-widget-footer">
                 <li>
-                  <a href="aplikasi-data-siswa.html">Data Siswa</a>
+                  <a href="aplikasi-data-siswa-login.html">Data Siswa</a>
                 </li>
                 <li>
                   <a href="https://raportku.com/">E-Raport</a>
@@ -705,6 +729,19 @@
             });
            
         });
+
+        const audioHomePage = document.getElementById("audioHomePage");
+        audioHomePage.muted = true;
+        setTimeout(function() {
+          audioHomePage.play();
+          audioHomePage.muted = false;
+
+          setTimeout(function() {
+            audioHomePage.play();
+          }, 5000);
+
+        }, 10000);
+      
 
     </script>
 
